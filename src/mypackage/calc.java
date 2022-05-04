@@ -108,12 +108,12 @@ public class calc {
 
             if (isArab){
                 return Integer.toString(result);
-                //System.out.println(result);
+
             }
             else
             {
-                return Integer.toString(result);
-                //System.out.println(toRome(result));
+                return toRome(result);
+
             }
         }
         else {
