@@ -107,27 +107,29 @@ public class calc {
             }
 
             if (isArab){
-                System.out.println(result);
+                return Integer.toString(result);
+                //System.out.println(result);
             }
             else
             {
-                System.out.println(toRome(result));
+                return Integer.toString(result);
+                //System.out.println(toRome(result));
             }
         }
         else {
                 throw new Exception("throws Exeption");
         }
-        return "";
+        //return "";
     }
 
     public static void main(String[] args)
     {
         try
         {
-            calc("X*III");
-            calc("10/3");
-            calc("9/9");
-            calc("8/5");
+            System.out.println(calc("III*VII"));
+            System.out.println(calc("VI+III"));
+            System.out.println(calc("IX-II"));
+            System.out.println(calc("VIII/II"));
         }
         catch (Exception e)
         {
