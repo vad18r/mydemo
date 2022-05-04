@@ -119,17 +119,15 @@ public class calc {
         else {
                 throw new Exception("throws Exeption");
         }
-        //return "";
     }
 
     public static void main(String[] args)
     {
         try
         {
-            System.out.println(calc("III*VII"));
-            System.out.println(calc("VI+III"));
-            System.out.println(calc("IX-II"));
-            System.out.println(calc("VIII/II"));
+            Scanner sc = new Scanner(System.in);
+            String s = sc.nextLine();
+            System.out.println(calc(s));
         }
         catch (Exception e)
         {
